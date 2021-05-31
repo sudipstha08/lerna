@@ -1,0 +1,29 @@
+{
+  "name": "@project/shared",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Sudip Shrestha <sudipstha08@gmail.com>",
+  "homepage": "https://github.com/sudipstha08/lerna#readme",
+  "license": "ISC",
+  "main": "lib/shared.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudipstha08/lerna.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/sudipstha08/lerna/issues"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
+}

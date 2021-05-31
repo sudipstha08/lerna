@@ -1,0 +1,20 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "yarn install; lerna bootstrap;",
+    "start": "lerna run start --parallel",
+    "package:user": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope user --stream dev",
+    "build:user": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope user --stream build",
+    "run:build:user": "lerna run start --scope user",
+    "package:admin": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope admin --stream dev",
+    "build:admin": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope admin --stream build",
+    "run:build:admin": "lerna run start --scope admin"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

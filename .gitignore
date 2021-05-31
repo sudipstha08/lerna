@@ -1,0 +1,14 @@
+.next
+node_modules
+storybook-static
+lerna-debug.log
+.env.local
+.env.production
+.env.dev
+.env
+dist
+/public/
+yarn-error.log
+build/
+
+.idea
