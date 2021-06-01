@@ -10,5 +10,6 @@ dist
 /public/
 yarn-error.log
 build/
+.eslintcache
 
 .idea
