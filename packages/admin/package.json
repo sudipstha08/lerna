@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@project/shared": "^0.0.1",
+    "@project/shared": "^1.0.0",
     "@types/react": "^17.0.8",
     "dotenv": "^10.0.0",
     "next": "10.2.3",

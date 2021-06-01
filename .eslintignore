@@ -1,0 +1,10 @@
+# Eslint Ignore
+
+**/node_modules/**
+**/build/**
+**/lib/**
+package.json
+README.md
+.env
+LICENSE
+yarn.lock

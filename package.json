@@ -9,12 +9,28 @@
     "run:build:user": "lerna run start --scope user",
     "package:admin": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope admin --stream dev",
     "build:admin": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope admin --stream build",
-    "run:build:admin": "lerna run start --scope admin"
+    "run:build:admin": "lerna run start --scope admin",
+    "lint": "eslint './src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix"
   },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
     "lerna": "^4.0.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix"
   }
 }
