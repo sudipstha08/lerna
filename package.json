@@ -10,7 +10,7 @@
     "package:admin": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope admin --stream dev",
     "build:admin": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope admin --stream build",
     "run:build:admin": "lerna run start --scope admin",
-    "lint:ts": "eslint --ignore-path .eslintignore",
+    "lint": "eslint --ignore-path .eslintignore",
     "fix": "yarn lint:ts --fix"
   },
   "workspaces": [
