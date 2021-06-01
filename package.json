@@ -14,7 +14,7 @@
     "fix": "yarn lint:ts --fix",
     "lint-staged": "lint-staged",
     "format": "eslint -c .eslintrc.js --ignore-path .eslintignore --fix",
-    "git-add": "git add .",
+    "git-add": "git add ."
   },
   "workspaces": [
     "packages/*"
