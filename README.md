@@ -6,10 +6,10 @@
 </p>
 
 ## commands
-| commands       |   description      |
-|----------------|--------------------|
-| npx lerna init | init lerna         |
-| lerna create   | create a package   |
+| commands         |   description      |
+|------------------|--------------------|
+| `npx lerna init` | init lerna         |
+| `lerna create`   | create a package   |
 
 ## Add npm packages to the specific lerna package
 ```
