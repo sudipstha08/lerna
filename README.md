@@ -1,7 +1,9 @@
 <p align="center">
-  <img alt="Lerna" src="https://user-images.githubusercontent.com/645641/79596653-38f81200-80e1-11ea-98cd-1c6a3bb5de51.png" width="300">
+  <img alt="Lerna" src="https://user-images.githubusercontent.com/645641/79596653-38f81200-80e1-11ea-98cd-1c6a3bb5de51.png" width="200">
 </p>
-A tool for managing JavaScript projects with multiple packages.
+<p align="center">
+  A tool for managing JavaScript projects with multiple packages.
+</p>
 
 ## commands
 | commands       |   description      |
