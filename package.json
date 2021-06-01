@@ -16,6 +16,17 @@
   "workspaces": [
     "packages/*"
   ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "packages/**/*.{js,json,ts,tsx}": [
+      "yarn run fix",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "eslint": "^7.27.0",
     "lerna": "^4.0.0",
@@ -33,16 +44,5 @@
     "eslint-plugin-react": "^7.24.0",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0"
-  },
-  "husky": {
-    "hooks": {
-        "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-      "packages/**/*.{js,json,ts,tsx}": [
-          "yarn run fix",
-          "git add"
-      ]
   }
 }
