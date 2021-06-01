@@ -11,22 +11,24 @@
     "build:admin": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope admin --stream build",
     "run:build:admin": "lerna run start --scope admin",
     "lint": "eslint --ignore-path .eslintignore",
-    "fix": "yarn lint:ts --fix"
+    "fix": "yarn lint:ts --fix",
+    "lint-staged": "lint-staged",
+    "format": "eslint -c .eslintrc.js --ignore-path .eslintignore --fix",
+    "git-add": "git add .",
   },
   "workspaces": [
     "packages/*"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
-    "packages/**/*.{js,json,ts,tsx}": [
-      "yarn run lint",
+    "*.{js,jsx,ts,tsx}": [
+      "yarn stylelint",
+      "yarn format",
       "git add"
     ]
   },
+  "pre-commit": [
+    "lint-staged"
+  ],
   "devDependencies": {
     "@types/node": "^15.6.1",
     "@types/react": "^17.0.8",
