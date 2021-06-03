@@ -13,7 +13,7 @@
 | `yarn bootstrap`    | install dependencies       |
 | `yarn package:user` | runs user server :running: |
 
-## Add npm packages to the specific lerna package
+## Add npm packages to the specific lerna package :heavy_plus_sign:
 ```sh
 $ lerna add next-compose-plugins --scope=user
 $ lerna add next-transpile-modules --scope '{admin,user}'
