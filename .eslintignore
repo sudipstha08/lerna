@@ -1,4 +1,4 @@
-# Eslint Ignore
+# EslintIgnore
 
 **/node_modules/**
 **/build/**
