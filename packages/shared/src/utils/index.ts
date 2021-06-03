@@ -1,1 +1,1 @@
-export const utillity="utils";
+export const utils = 'utils'
