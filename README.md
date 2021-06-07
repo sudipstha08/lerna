@@ -12,6 +12,7 @@
 | `lerna create`      | create a package           |
 | `yarn bootstrap`    | install dependencies       |
 | `yarn package:user` | runs user server :running: |
+| `yarn remove`       | removes a package          |
 
 ## Add npm packages to the specific lerna package :heavy_plus_sign:
 ```sh

@@ -1,11 +1,8 @@
 import React from 'react'
+import { Wrapper } from './style'
 
 const Button = () => {
-  return (
-    <button>
-      Hello
-    </button>
-  )
+  return <Wrapper>Hello</Wrapper>
 }
 
-export  { Button }
+export { Button }
