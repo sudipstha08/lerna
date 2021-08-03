@@ -14,6 +14,16 @@
 | `yarn package:user` | runs user server :running: |
 | `yarn remove`       | removes a package          |
 
+## Tech Stacks :tada:
+|    tech       |   description            |
+|---------------|--------------------------|    
+| `next`        | server side rendering    |
+| `react-query` | data fetching library    |
+| `lerna`       | multi-package repos      |
+| `axios`       | HTTP client              |
+| `typescript`  | type system for JS       |
+| `styled-components` | CSS in JS          |
+
 ## Add npm packages to the specific lerna package :heavy_plus_sign:
 ```sh
 $ lerna add next-compose-plugins --scope=user

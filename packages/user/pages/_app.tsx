@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { GlobalStyles } from '../styles/global-styles'
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient({ defaultOptions: {} })
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
