@@ -1,6 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
-import { Wrapper } from './style'
+import styled from 'styled-components'
+
+export const Wrapper = styled.div`
+  margin: 2em;
+`
 
 const HomePage = () => {
   return (
