@@ -32,3 +32,7 @@ $ lerna add next-transpile-modules --scope '{admin,user}'
 
 ## REFERENCES :books:
 1. https://medium.com/wesionary-team/creating-next-js-monorepo-d41ea78f4afb
+
+1. TypeError: Cannot read property 'concat' of undefined
+| `yarn --frozen-lockfile`
+
